@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite"  parallel = "tests">
+    <test name="Login Test">
+     <classes>
+        <class name="com.orangehrm.testcases.LoginTest"/>
+    </classes>
+    </test>
+    
+    <test name="Create Lead Test">
+     <classes>
+        <class name="com.orangehrm.testcases.CreateLeadTest"/>
+    </classes>
+    </test>
+    
+    <test name="Create Task Test">
+     <classes>
+        <class name="com.orangehrm.testcases.CreateTaskTest"/>
+    </classes>
+    </test>
+</suite>
