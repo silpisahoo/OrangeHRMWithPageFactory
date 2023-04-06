@@ -181,16 +181,17 @@ public class AdminPage extends OrangeHRMBasePage {
     public AdminPage organizationMenu(){
         organizationmenu.click();
         generalinfo.click();
-        getDriver().Scrolltoelement(organizationmenu);
+        getDriver().waitForElement(organizationmenu);
         organizationmenu.click();
-        getDriver().Scrolltoelement(location);
+        getDriver().waitForElement(location);
+
         location.click();
-        getDriver().Scrolltoelement(checkbox);
+        getDriver().waitForElement(checkbox);
         checkbox.click();
         deletebttn.click();
-        getDriver().Scrolltoelement(cancelbtn);
+        getDriver().waitForElement(cancelbtn);
         cancelbtn.click();
-        getDriver().Scrolltoelement(organizationmenu);
+        getDriver().waitForElement(organizationmenu);
         organizationmenu.click();
         structure.click();
 
@@ -203,22 +204,22 @@ public class AdminPage extends OrangeHRMBasePage {
         username.sendKeys(name);
         descriptionbox.sendKeys(description);
         savebtn.click();
-        getDriver().Scrolltoelement(qualificationmenu);
+        getDriver().waitForElement(qualificationmenu);
         qualificationmenu.click();
         educationmenu.click();
         addbtn.click();
         txtbox.sendKeys(level);
         savebtn.click();
-        getDriver().Scrolltoelement(qualificationmenu);
+        getDriver().waitForElement(qualificationmenu);
         qualificationmenu.click();
         license.click();
         addbtn.click();
         txtbox.sendKeys(licenses);
         savebtn.click();
-        getDriver().Scrolltoelement(qualificationmenu);
+        getDriver().waitForElement(qualificationmenu);
         qualificationmenu.click();
         Languagemenu.click();
-        getDriver().Scrolltoelement(qualificationmenu);
+        getDriver().waitForElement(qualificationmenu);
         qualificationmenu.click();
         membershipmenu.click();
 
@@ -241,20 +242,20 @@ public class AdminPage extends OrangeHRMBasePage {
     public AdminPage configurationMenu(String testEmail){
         configurationmenu.click();
         cofiguremenu.click();
-        getDriver().Scrolltoelement(toggle);
+        getDriver().waitForElement(toggle);
         toggle.click();
         txtmailbox.sendKeys(testEmail);
         savebtn.click();
 
-        getDriver().Scrolltoelement(configurationmenu);
+        getDriver().waitForElement(configurationmenu);
         configurationmenu.click();
         emailSubemenu.click();
-        getDriver().Scrolltoelement(toggle);
+        getDriver().waitForElement(toggle);
         toggle.click();
         configurationmenu.click();
         localizationmenu.click();
         Selectdropdown2.click();
-        getDriver().Scrolltoelement(Selectdropdown2);
+        getDriver().waitForElement(Selectdropdown2);
         Selectdropdown2.sendKeys(Keys.ARROW_DOWN);
         Selectdropdown2.sendKeys(Keys.ARROW_DOWN);
         Selectdropdown2.sendKeys(Keys.ARROW_DOWN);

@@ -46,9 +46,9 @@ public class BuzzPage extends OrangeHRMBasePage{
         getDriver().Scrolltoelement(likebtn);
         likebtn.click();
         commentbtn.click();
-        getDriver().Scrolltoelement(commenttxt);
+        getDriver().waitForElement(commenttxt);
         commenttxt.sendKeys(commentBox);
-        getDriver().Scrolltoelement(commenttxt);
+        getDriver().waitForElement(commenttxt);
         commenttxt.sendKeys(Keys.ENTER);
 
             return this;

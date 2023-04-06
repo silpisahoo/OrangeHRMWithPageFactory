@@ -29,23 +29,23 @@ import org.openqa.selenium.support.PageFactory;
 
         public DirectoryPage directory(String empName) {
             System.out.println("gg");
-            getDriver().Scrolltoelement(employeeNameAutoSuggest);
+            getDriver().waitForElement(employeeNameAutoSuggest);
 
             employeeNameAutoSuggest.sendKeys(empName);
-            getDriver().Scrolltoelement(employeeNameAutoSuggest);
+            getDriver().waitForElement(employeeNameAutoSuggest);
             employeeNameAutoSuggest.sendKeys(Keys.ARROW_DOWN);
             employeeNameAutoSuggest.sendKeys(Keys.ARROW_DOWN);
             employeeNameAutoSuggest.sendKeys(Keys.ENTER);
             Selectdropdown.click();
-            getDriver().Scrolltoelement(Selectdropdown);
+            getDriver().waitForElement(Selectdropdown);
             Selectdropdown.sendKeys(Keys.ARROW_DOWN);
             Selectdropdown.sendKeys(Keys.ARROW_DOWN);
             Selectdropdown.sendKeys(Keys.ARROW_DOWN);
             Selectdropdown.sendKeys(Keys.ARROW_DOWN);
             Selectdropdown.sendKeys(Keys.ENTER);
-            getDriver().Scrolltoelement(Selectdropdown2);
+            getDriver().waitForElement(Selectdropdown2);
             Selectdropdown2.click();
-            getDriver().Scrolltoelement(Selectdropdown2);
+            getDriver().waitForElement(Selectdropdown2);
             Selectdropdown2.sendKeys(Keys.ARROW_DOWN);
             Selectdropdown2.sendKeys(Keys.ARROW_DOWN);
             Selectdropdown2.sendKeys(Keys.ARROW_DOWN);
